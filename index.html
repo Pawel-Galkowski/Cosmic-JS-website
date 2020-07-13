@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132401210-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-132401210-1');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="ITGalkowski small agency which creating powerfull websites and applications" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ITGalkowski agence created by Paweł Gałkowski</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="canonical" href="https://itgalkowski.pl" />
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/cbb46f640a.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./js/three.r92.min.js"></script>
+    <script src="./js/vanta.net.min.js"></script>
+    <script src="./js/vanta.dots.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            $("#preloader").css("display", "none");
+            $(".nav").css('visibility', 'visible');
+            $(".footer").css('visibility', 'visible');
+        });
+    </script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery.pagepiling.css" />
+    <script src="./js/jquery.pagepiling.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#pagepiling').pagepiling({
+                menu: '#scroll-menu',
+                anchors: ['home', 'about', 'information', 'projects', 'contact'],
+                sectionsColor: ['#191d1e', '#134d0e', '#132d0e', '#262d7e', '#194172'],
+                navigation: false,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="preloader" class="js-preloader">
+        <div id="shape">
+            <img src="img/737.gif" id="loader" alt="Circle loader" /><br />
+            <img src="img/279.gif" id="loading" alt="Loading..." />
+        </div>
+    </div>
+    <nav class="nav main-menu" id="menu">
+        <div class="nav-logo" id="web-logo">
+            <a href="#start">
+                <svg viewBox="0 0 450 110">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="60%">ITGALKOWSKI</text>
+                    </symbol>
+
+                    <g class="g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <label class="navigation-toggle" for="input-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <input type="checkbox" id="input-toggle">
+        <ul class="nav-menu">
+            <li class="nav-phone">
+                <a class="nav-phone-link" href="tel:+48697522113">tel. +48 697 522 113</a>
+            </li>
+            <li class="menu-links">
+                <ul id="scroll-menu">
+                    <li class="nav-item active" data-menuanchor="home">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="about">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="information">
+                        <a class="nav-link" href="#information">Information</a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="projects">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="contact">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="pagepiling">
+        <div class="section" id="section1">
+            <header class="hero particles">
+                <canvas id="projector">Your browser does not support the Canvas element.</canvas>
+                <div class="main-text">
+                    <h1 class="en">Beautiful websites<span class="txt-rotate" data-period="2000" data-rotate='[" in modern style", " like from your dreams", " at low cost"]'></span>
+                    </h1>
+                </div>
+            </header>
+        </div>
+        <section class="section" id="section2">
+            <div class="about" id="about">
+                <div class="about-box">
+                    <div class="about-info">
+                        <h2 class="about-title">
+                            About</h2>
+                        <aside class="diamond-headline">
+                            <i class="far fa-gem fa-2x"></i>
+                            <hr>
+                        </aside>
+                        <p class="about-text"><strong>ITGalkowski </strong> is a small agency which creating best modern websites. I have experience in modern web technologies.<br /> I can create web pages, web application and desktop applications for windows systems.<br /></p>
+                        <p class="about-text2"><strong>ITGalkowski </strong> is a small agency which creating best modern websites.<br /> I can create web pages, web application and desktop applications for windows systems.</p>
+                    </div>
+                    <div class="about-items">
+                        <div class="about-item">
+                            <span class="icon">
+                                <i class="fab fa-node"></i>
+                            </span>
+                            <p class="center-text">Node.JS</p>
+                        </div>
+                        <div class="about-item">
+                            <span class="icon">
+                                <i class="fab fa-react"></i>
+                            </span>
+                            <p class="center-text">React.JS</p>
+                        </div>
+                        <div class="about-item">
+                            <p class="icon">
+                                <i class="fab fa-wordpress"></i>
+                            </p>
+                            <p class="center-text">Wordpress</p>
+                        </div>
+                        <div class="about-item atr-hide">
+                            <span class="icon">
+                                <i class="fab fa-joomla"></i>
+                            </span>
+                            <p class="center-text">Joomla</p>
+                        </div>
+                        <div class="about-item">
+                            <span class="icon">
+                                <i class="fab fa-php"></i>
+                            </span>
+                            <p class="center-text">PHP</p>
+                        </div>
+                        <div class="about-item atr-hide">
+                            <span class="icon">
+                                <i class="fab fa-js"></i>
+                            </span>
+                            <p class="center-text">JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section3">
+            <div class="information" id="information">
+                <div class="row-direction">
+                    <div class="needs-box">
+                        <div class="needs-info">
+                            <h2 class="information-title">Develop what you need</h2>
+                            <aside class="diamond-headline">
+                                <i class="far fa-gem fa-2x"></i>
+                                <hr>
+                            </aside>
+                            <p class="information-text">
+                                I'm a full-stack developer, so I know how to create your website to run across devices using the latest technologies available. I can make your dream come true.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="responsive">
+                        <img class="responsive-photo" alt="Responive page" src="./img/responsive.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section4">
+            <div class="projects" id="projects">
+                <div class="projects-box">
+                    <div class="left-projects">
+                        <h2 class="projects-title">Our projects
+                        </h2>
+                        <aside class="diamond-headline">
+                            <i class="far fa-gem fa-2x"></i>
+                            <hr>
+                        </aside>
+                        <span class="projects-text">
+                            This gallery presents some of my projects and designs.
+                            Latest are from the left to right.
+                        </span>
+                        <span class="projects-text2">
+                            This gallery presents two best of my public projects.
+                        </span>
+                    </div>
+                    <div class="right-projects">
+                        <div class="row">
+                            <div class="column">
+                                <a target="_blank" href="https://github.com/rocksdevil/node-skype">
+                                    <img src="/img/node-app.jpg" alt="Nojde.js app" style="width:100%">
+                                </a>
+                                <a href="#start">
+                                    <img src="/img/express.JPG" alt="Express.js app" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a href="#start">
+                                    <img src="/img/actually.JPG" alt="Portfolio" style="width:100%">
+                                </a>
+                                <a target="_blank" href="https://rocksdevil.github.io/to-do-list/">
+                                    <img src="/img/toDoList.PNG" alt="To do list" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a target="_blank" href="https://rocksdevil.github.io/old-portfolio/">
+                                    <img src="/img/old-portfolio.JPG" alt="Old Portfolio" style="width:100%">
+                                </a>
+                                <a target="_blank" href="https://github.com/rocksdevil/Find-Number">
+                                    <img src="/img/numbers.JPG" alt="Guess number" style="width:100%">
+                                </a>
+                                <a target="_blank" href="https://rocksdevil.github.io/calculator/">
+                                    <img src="/img/calculator.JPG" alt="Calculator" style="width:100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section5">
+            <div class="contact" id="contact">
+                <div class="contact-box">
+                    <div class="contact-side">
+                        <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1U6PcaA-rNuTugD9dPXR8OhmtxyXJvghJ"></iframe>
+                        <iframe id="map2" src="https://www.google.com/maps/d/u/0/embed?mid=13xGa3YLYl9-ADavKizyLqytyBA7FPlLT"></iframe>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <h3 class="contact-text">Adress</h3>
+                                <p class="contact-subtext">
+                                    <span>
+                                        <i class="fas fa-home"></i> I am available
+                                    </span>
+                                    <span> in Wroclaw & Raciborz</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <h3 class="contact-text">Phone / Whatsapp</h3>
+                                <a class="contact-subtext" href="tel:+48697522113"><i class="fas fa-phone-square"></i> +48 697 522 113</a>
+                            </div>
+                            <div class="contact-item">
+                                <h3 class="contact-text">Email</h3>
+                                <a class="contact-subtext" href="mailto:poczta@itgalkowski.pl">
+                                    <i class="fas fa-envelope"></i> poczta@itgalkowski.pl
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <p class="footer-text">Copyright &copy; 2019 ITGalkowski.pl</p>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script>
+        if (screen.width <= 500) {
+            VANTA.DOTS({
+                el: "#about",
+                color: 0x93e9f3,
+                color2: 0x191d1e,
+                backgroundColor: 0x191d1e
+            });
+
+        } else {
+            VANTA.DOTS({
+                el: "#about",
+                color: 0x93e9f3,
+                color2: 0x0cdbf3,
+                backgroundColor: 0x191d1e
+            });
+        }
+    </script>
+    <script>
+        if (screen.width <= 500) {
+            VANTA.NET({
+                el: "#information",
+                color: 0x0cdbf3,
+                backgroundColor: 0x191d1e,
+                maxDistance: 10.00,
+                spacing: 25.00
+            });
+        } else {
+            VANTA.NET({
+                el: "#information",
+                color: 0x0cdbf3,
+                backgroundColor: 0x191d1e,
+                maxDistance: 25.00,
+                spacing: 20.00
+            });
+        }
+    </script>
+    <script>
+        if (screen.width <= 500) {
+            VANTA.NET({
+                el: "#projects",
+                color: 0x0cdbf3,
+                backgroundColor: 0x191d1e,
+                maxDistance: 10.00,
+                spacing: 20.00
+            });
+
+        } else {
+            VANTA.NET({
+                el: "#projects",
+                color: 0x0cdbf3,
+                backgroundColor: 0x191d1e,
+                maxDistance: 22.00,
+                spacing: 15.00
+            });
+        }
+    </script>
+    <script>
+        if (screen.width <= 500) {
+            VANTA.DOTS({
+                el: "#contact",
+                color: 0x93e9f3,
+                color2: 0x191d1e,
+                backgroundColor: 0x191d1e
+            });
+
+        } else {
+            VANTA.DOTS({
+                el: "#contact",
+                color: 0x93e9f3,
+                color2: 0x0cdbf3,
+                backgroundColor: 0x191d1e
+            });
+        }
+    </script>
+    <script src="./js/script.js"></script>
+    <script>
+        $("#input-toggle").on("click", function() {
+            if ($("#input-toggle").is(':checked')) {
+                $(".navigation-toggle span").addClass("toggle");
+                $('.nav-logo svg').css("display", "none");
+                $('.nav-menu').css("transition", "width 0.35s");
+                $('.nav-link').click(function() {
+                    $("#input-toggle").prop("checked", false);
+                    $('.nav-logo svg').css("display", "block");
+                    $('.nav-menu').css("transition", "width 0.2s");
+                    $(".navigation-toggle span").removeClass("toggle");
+                });
+            } else {
+                $(".navigation-toggle span").removeClass("toggle");
+                $('.nav-logo svg').css("display", "block");
+                $('.nav-menu').css("transition", "width 0.2s");
+            }
+        });
+        console.clear();
+    </script>
+</body></html>
