@@ -24,7 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/cbb46f640a.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn2yqjuo7qYG75tpE8zQlw-3aRhzOROeM&callback=initMap"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="./js/three.r92.min.js"></script>
     <script src="./js/vanta.net.min.js"></script>
@@ -129,9 +129,8 @@
                             <i class="far fa-gem fa-2x"></i>
                             <hr>
                         </aside>
-                        <p class="about-text"><strong>ITGalkowski </strong> is a small agency which creating best modern websites. I have experience in modern web technologies.<br /> I can create web pages, web application and desktop applications for windows systems.<br /></p>
-                        <p class="about-text2"><strong>ITGalkowski </strong> is a small agency which creating best modern websites.<br /> I can create web pages, web application and desktop applications for windows systems.</p>
-                    </div>
+                        <p class="about-text"><strong>ITGalkowski </strong> is a small agency which creating best modern websites.<span class="mobile-hidden">I have experience in modern web technologies.</span><br /> I can create web pages, web application and desktop applications for windows systems.<br /></p>
+                     </div>
                     <div class="about-items">
                         <div class="about-item">
                             <span class="icon">
@@ -216,7 +215,7 @@
                         <div class="row">
                             <div class="column">
                                 <a target="_blank" href="https://github.com/Pawel-Galkowski/node-skype">
-                                    <img src="/img/node-app.jpg" alt="Nojde.js app" style="width:100%">
+                                    <img src="./img/node-app.jpg" alt="Nojde.js app" style="width:100%">
                                 </a>
                                 <a href="#start">
                                     <img src="./img/express.JPG" alt="Express.js app" style="width:100%">
@@ -250,8 +249,7 @@
             <div class="contact" id="contact">
                 <div class="contact-box">
                     <div class="contact-side">
-                        <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1U6PcaA-rNuTugD9dPXR8OhmtxyXJvghJ"></iframe>
-                        <iframe id="map2" src="https://www.google.com/maps/d/u/0/embed?mid=13xGa3YLYl9-ADavKizyLqytyBA7FPlLT"></iframe>
+                        <div id="map"></div>
                         <div class="contact-info">
                             <div class="contact-item">
                                 <h3 class="contact-text">Adress</h3>
@@ -357,6 +355,13 @@
         }
     </script>
     <script src="./js/script.js"></script>
+    <script>
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8
+          });
+        }</script>
     <script>
         $("#input-toggle").on("click", function() {
             if ($("#input-toggle").is(':checked')) {

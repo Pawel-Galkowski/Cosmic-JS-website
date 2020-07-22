@@ -697,15 +697,7 @@ section {
     padding: 1rem 0;
     font-size: 1.5rem;
     line-height: 3rem;
-    letter-spacing: .3rem;
-    color: #fff;
-}
-
-.about-text2 {
-    display: none;
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    text-align: left;
     letter-spacing: .3rem;
     color: #fff;
 }
@@ -817,7 +809,6 @@ section {
 
     .about-text {
         text-align: center;
-        ;
     }
 
 }
@@ -837,11 +828,11 @@ section {
         padding: 0 0 4rem 0;
     }
 
-    .about-text {
+    .mobile-hidden{
         display: none;
     }
 
-    .about-text2 {
+    .about-text {
         display: initial;
         line-height: 2.2rem;
         letter-spacing: .3rem;
@@ -1356,13 +1347,6 @@ section {
     margin: 1rem 2rem 1rem 0;
 }
 
-#map2 {
-    display: none;
-    width: 60%;
-    height: 90%;
-    margin: 1rem 2rem 1rem 0;
-}
-
 .contact-info {
     height: 70%;
     align-items: center;
@@ -1462,10 +1446,6 @@ section {
     }
 
     #map {
-        display: none;
-    }
-
-    #map2 {
         display: block;
         width: 100%;
         margin: 0 0 3rem 0;
@@ -1514,10 +1494,6 @@ section {
 @media (max-width: 426px) {
     .contact-box {
         padding: 6rem 1rem 4rem 1rem;
-    }
-
-    #map2 {
-        display: none;
     }
 
     .footer-text {
